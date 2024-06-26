@@ -13,3 +13,13 @@
   color: white;
   height: 200px;
 }
+
+.headerDiv {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.ducksLogo {
+  height: 200px;
+  margin: auto;
+  margin-left: calc(50% - 15%);
+}
