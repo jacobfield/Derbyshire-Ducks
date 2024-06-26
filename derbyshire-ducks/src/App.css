@@ -16,10 +16,13 @@
 
 .headerDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 .ducksLogo {
   height: 200px;
   margin: auto;
   margin-left: calc(50% - 15%);
+  position: relative;
+  left: calc(50% + 250px);
+  transform: translateX(-50%);
 }
