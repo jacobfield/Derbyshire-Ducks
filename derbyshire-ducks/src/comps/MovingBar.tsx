@@ -1,9 +1,11 @@
 import React from "react";
 
-export default function MovingBar() {
+const MovingBar: React.FC = () => {
   return (
     <div className="movingBar">
       <p className="movingText"> This text is moving</p>
     </div>
   );
-}
+};
+
+export default MovingBar;

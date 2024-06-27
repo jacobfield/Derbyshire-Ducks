@@ -27,7 +27,7 @@
 }
 
 .movingBar {
-  /* position: relative; */
+  position: relative;
   width: 100%;
   overflow: hidden; /* prevents scrollbars */
   white-space: nowrap; /* prevent text wrapping */
