@@ -27,5 +27,26 @@
   transform: translateX(-50%);
 }
 
-.headerTitle {
+.movingBar {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* prevents scrollbars */
+  white-space: nowrap; /* prevent text wrapping */
+  background-color: #5950c7;
+}
+
+.movingText {
+  display: inline-block; /* Display as inline-block for inline positioning */
+  position: absolute; /* Position absolutely relative to .moving-bar */
+  right: 0; /* Start from the right*/
+  animation: moveLeft 10s linear infinite; /* Apply animation for horizontal movement */
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(100%); /* Start off screen to right*/
+  }
+  100% {
+    transform: translateX(-100%); /* Move off screen to left*/
+  }
 }

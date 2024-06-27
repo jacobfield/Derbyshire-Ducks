@@ -1,5 +1,5 @@
 import ducksLogo from "../assets/ducksLogo.png";
-
+import MovingBar from "./MovingBar.tsx";
 export default function Header() {
   return (
     <>
@@ -12,6 +12,7 @@ export default function Header() {
           src={ducksLogo}
         />
       </div>
+      <MovingBar></MovingBar>
     </>
   );
 }
