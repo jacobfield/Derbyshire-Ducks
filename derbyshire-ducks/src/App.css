@@ -11,6 +11,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
   height: 200px;
+  position: relative;
 }
 
 .headerDiv {
@@ -27,12 +28,17 @@
 }
 
 .movingBar {
-  position: relative;
   width: 100%;
   overflow: hidden; /* prevents scrollbars */
   white-space: nowrap; /* prevent text wrapping */
   background-color: #5950c7;
   height: 35px;
+  top: 1; /* Stick to the top of App-header */
+  left: 0;
+
+  position: sticky;
+  width: 100%;
+  z-index: 1000;
 }
 
 .movingText {
@@ -49,9 +55,9 @@
 
 @keyframes moveLeft {
   0% {
-    transform: translateX(100%); /* Start off screen to right*/
+    transform: translateX(100); /* Start off screen to right*/
   }
   100% {
-    transform: translateX(-100%); /* Move off screen to left*/
+    transform: translateX(-750%); /* Move off screen to left*/
   }
 }
