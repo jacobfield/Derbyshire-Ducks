@@ -26,3 +26,6 @@
   left: calc(50% + 250px);
   transform: translateX(-50%);
 }
+
+.headerTitle {
+}
