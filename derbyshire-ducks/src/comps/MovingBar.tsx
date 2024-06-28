@@ -7,11 +7,11 @@ const MovingBar: React.FC = () => {
   useEffect(() => {
     const moveText = () => {
       // update position to move left.
-      setPosition((prevPosition) => prevPosition - 2);
+      setPosition((prevPosition) => prevPosition - 1);
     };
     const interval = setInterval(moveText, 20); // can adjust for smoother animation
 
-    if (position < -1570) {
+    if (position < -2104) {
       setPosition(window.innerWidth);
     }
     return () => clearInterval(interval); //cleanup on comp unmount
@@ -41,8 +41,8 @@ const MovingBar: React.FC = () => {
         className="movingText"
         style={{ transform: `translateX(${position}px` }}
       >
-        #DerbyshireDucks #JoinTheFlock #QuackQuack #FlagFootball #BAFA
-        #QuackAttack #DuckSquad #FlyingVFormation #FlagIsSwag #Takeoff
+        {`#DerbyshireDucks\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#JoinTheFlock\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#QuackQuack\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#FlagFootball\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#BAFA
+      \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#QuackAttack\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#DuckSquad\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#FlyingVFormation\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#FlagIsSwag\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0#Takeoff`}
       </p>
     </div>
   );
