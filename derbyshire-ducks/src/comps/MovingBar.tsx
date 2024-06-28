@@ -1,7 +1,8 @@
-import React, { useState, useEffect, useRef } from "react";
+import React from "react";
+import { useState, useEffect, useRef } from "react";
 
 const MovingBar: React.FC = () => {
-  const [hashtags, setHashtags] = useState([
+  const initialHashtags = [
     "#DerbyshireDucks",
     "#JoinTheFlock",
     "#QuackQuack",
@@ -12,53 +13,70 @@ const MovingBar: React.FC = () => {
     "#VFormation",
     "#FlagIsSwag",
     "#Takeoff",
-  ]); // Removed the semicolon here
-  const [positions, setPositions] = useState(
-    hashtags.map(() => window.innerWidth)
-  );
-  const textRefs = useRef<(HTMLSpanElement | null)[]>([]);
+  ];
+
+  // Duplicate the hashtags array for continuous looping
+  const [hashtags, setHashtags] = useState([
+    ...initialHashtags,
+    ...initialHashtags,
+  ]);
+  const [position, setPosition] = useState(0);
+  const textRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     const moveText = () => {
-      setPositions((prevPositions) =>
-        prevPositions.map((pos, index) => {
-          const currentWidth = textRefs.current[index]?.offsetWidth || 0;
-          let newPos = pos + 2; // Move each element to the right by 2px
-          if (newPos + currentWidth > window.innerWidth) {
-            // Check if element is off-screen
-            const lastPos = Math.max(
-              ...prevPositions.filter((_, i) => i !== index)
-            );
-            const lastWidth =
-              textRefs.current[prevPositions.indexOf(lastPos)]?.offsetWidth ||
-              0;
-            newPos = lastPos + lastWidth + 10; // Reposition to the back with a gap
+      setPosition((prevPosition) => {
+        // Assuming textRef.current.offsetWidth is the width of the entire duplicated content
+        if (textRef.current) {
+          const halfWidth = textRef.current.offsetWidth / 2;
+          // Reset position for a seamless loop when half of the content has scrolled past
+          if (prevPosition < -halfWidth) {
+            return 0; // Reset to start position for seamless looping
+          } else {
+            return prevPosition - 3; // Continue moving text to the left
           }
-          return newPos;
-        })
-      );
+        } else {
+          return prevPosition; // No change if textRef is not available
+        }
+      });
     };
-
     const interval = setInterval(moveText, 20);
+
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    const updatePositionBasedOnTextWidth = () => {
+      if (textRef.current) {
+        // Initially set position to ensure text starts off-screen to the right
+        setPosition(window.innerWidth);
+      }
+    };
+
+    window.addEventListener("resize", updatePositionBasedOnTextWidth);
+    // Immediate call to set initial position
+    updatePositionBasedOnTextWidth();
+
+    return () =>
+      window.removeEventListener("resize", updatePositionBasedOnTextWidth);
+  }, []);
+
+  const renderHashtags = () => {
+    // Ensure sufficient whitespace for visual separation
+    return hashtags.join(" \u00A0\u00A0 ");
+  };
+
   return (
-    <div className="movingBar">
+    <div
+      className="movingBar"
+      style={{ overflow: "hidden", whiteSpace: "nowrap" }}
+    >
       <p
+        ref={textRef}
         className="movingText"
-        style={{ position: "relative", whiteSpace: "nowrap" }}
+        style={{ position: "absolute", left: position }}
       >
-        {hashtags.map((hashtag, index) => (
-          <span
-            key={index}
-            ref={(el) => (textRefs.current[index] = el)}
-            style={{ position: "absolute", left: `${positions[index]}px` }}
-          >
-            {hashtag +
-              "\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"}
-          </span>
-        ))}
+        {renderHashtags()}
       </p>
     </div>
   );
