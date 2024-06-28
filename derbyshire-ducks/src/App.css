@@ -45,19 +45,9 @@
   display: inline-block; /* Display as inline-block for inline positioning */
   position: absolute; /* Position absolutely relative to .moving-bar */
   right: 0; /* Start from the right*/
-  animation: moveLeft 60s linear infinite; /* Apply animation for horizontal movement */
 
   color: white;
   margin: auto;
   font-size: 24px;
   font-weight: bold;
-}
-
-@keyframes moveLeft {
-  0% {
-    transform: translateX(100); /* Start off screen to right*/
-  }
-  100% {
-    transform: translateX(-750%); /* Move off screen to left*/
-  }
 }
