@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const MovingBar: React.FC = () => {
   const initialHashtags = [
@@ -15,46 +14,43 @@ const MovingBar: React.FC = () => {
     "#Takeoff",
   ];
 
-  // Duplicate the hashtags array for continuous looping
   const [hashtags, setHashtags] = useState([
-    ...initialHashtags,
-    ...initialHashtags,
+    ...Array(1000).fill(initialHashtags).flat(),
   ]);
-  const [position, setPosition] = useState(0);
+  const [position, setPosition] = useState(window.innerWidth);
+  const [moveCount, setMoveCount] = useState(0);
   const textRef = useRef<HTMLParagraphElement>(null);
 
   useEffect(() => {
     const moveText = () => {
-      setPosition((prevPosition) => {
-        // Assuming textRef.current.offsetWidth is the width of the entire duplicated content
-        if (textRef.current) {
-          const halfWidth = textRef.current.offsetWidth / 2;
-          // Reset position for a seamless loop when half of the content has scrolled past
-          if (prevPosition < -halfWidth) {
-            return 0; // Reset to start position for seamless looping
-          } else {
-            return prevPosition - 3; // Continue moving text to the left
+      if (textRef.current) {
+        const textWidth = textRef.current.offsetWidth;
+        const totalDistance = textWidth + window.innerWidth;
+
+        setPosition((prevPosition) => {
+          const newPosition = prevPosition - 1;
+          // Check if the text has been completely displayed
+          if (Math.abs(newPosition) >= totalDistance) {
+            setMoveCount((prevCount) => prevCount + 1); // Increment move count
+            return window.innerWidth; // Reset position to start from the right again
           }
-        } else {
-          return prevPosition; // No change if textRef is not available
-        }
-      });
+          return newPosition;
+        });
+      }
     };
     const interval = setInterval(moveText, 20);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); // Removed moveCount from dependencies to prevent re-creating interval unnecessarily
 
   useEffect(() => {
     const updatePositionBasedOnTextWidth = () => {
       if (textRef.current) {
-        // Initially set position to ensure text starts off-screen to the right
         setPosition(window.innerWidth);
       }
     };
 
     window.addEventListener("resize", updatePositionBasedOnTextWidth);
-    // Immediate call to set initial position
     updatePositionBasedOnTextWidth();
 
     return () =>
@@ -62,8 +58,9 @@ const MovingBar: React.FC = () => {
   }, []);
 
   const renderHashtags = () => {
-    // Ensure sufficient whitespace for visual separation
-    return hashtags.join(" \u00A0\u00A0 ");
+    return hashtags.join(
+      " \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0 "
+    );
   };
 
   return (
