@@ -45,7 +45,7 @@
   display: inline-block; /* Display as inline-block for inline positioning */
   position: absolute; /* Position absolutely relative to .moving-bar */
   right: 0; /* Start from the right*/
-  animation: moveLeft 10s linear infinite; /* Apply animation for horizontal movement */
+  animation: moveLeft 60s linear infinite; /* Apply animation for horizontal movement */
 
   color: white;
   margin: auto;
