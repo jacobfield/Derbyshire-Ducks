@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-.staatliches {
-  font-family: "Staatliches", sans-serif;
+.bebas-neue {
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -24,10 +24,25 @@
 
 .headerDiv {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.titlesDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .headerTitle {
-  font-family: "StaatlichesStaatliches", sans-serif;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  margin: 0;
+  margin-top: 15px;
+  line-height: 1;
+}
+.subheading {
+  font-family: "Prompt", sans-serif;
+  font-size: 20px;
+  margin: 0;
+  margin-top: -5px; /* Negative margin to pull subheading closer */
 }
 .ducksLogo {
   height: 200px;
@@ -46,7 +61,6 @@
   height: 35px;
   top: 1; /* Stick to the top of App-header */
   left: 0;
-
   position: sticky;
   width: 100%;
   z-index: 1000;
