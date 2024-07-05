@@ -19,7 +19,7 @@ const MovingBar = () => {
   ]);
   const [position, setPosition] = useState(window.innerWidth);
   const [moveCount, setMoveCount] = useState(0);
-  const textRef = useRef < HTMLParagraphElement > null;
+  const textRef = useRef();
 
   useEffect(() => {
     const moveText = () => {

@@ -20,11 +20,13 @@
   color: white;
   height: 200px;
   position: relative;
+  width: 100%;
 }
 
 .headerDiv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
 }
 .titlesDiv {
   display: flex;
@@ -43,6 +45,7 @@
   font-size: 20px;
   margin: 0;
   margin-top: -5px; /* Negative margin to pull subheading closer */
+  margin-bottom: 3px;
 }
 .est {
   font-family: "Prompt", sans-serif;
@@ -81,4 +84,48 @@
   margin: auto;
   font-size: 24px;
   font-weight: bold;
+}
+@media (max-width: 431px) {
+  .headerDiv {
+    grid-template-columns: 1fr; /* Stack columns vertically */
+  }
+  .headerTitle {
+    font-size: 40px; /* Reduce font size for smaller screens */
+  }
+  .subheading,
+  .est {
+    font-size: 16px; /* Adjust font size for readability */
+    font-family: "Bebas Neue", sans-serif;
+  }
+  .ducksLogo {
+    height: 100px; /* Reduce logo size */
+    margin-left: 0; /* Center logo */
+    left: 50%; /* Adjust position for smaller screens */
+  }
+  .movingText {
+    font-size: 18px; /* Reduce font size for the moving text */
+  }
+}
+@media (min-width: 432px) and (max-width: 939px) {
+  .headerDiv {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust to two columns for medium screens */
+  }
+  .headerTitle {
+    font-size: 50px; /* Adjust font size for medium screens */
+  }
+  .subheading,
+  .est {
+    font-size: 18px; /* Slightly increase font size for better readability */
+  }
+  .ducksLogo {
+    height: 150px; /* Adjust logo size for medium screens */
+    margin-left: calc(50% - 75px); /* Adjust logo positioning */
+    left: 50%; /* Ensure center alignment */
+  }
+  .movingText {
+    font-size: 20px; /* Adjust font size for the moving text */
+  }
 }
