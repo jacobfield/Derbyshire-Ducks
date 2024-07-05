@@ -1,6 +1,7 @@
 import "./App.css";
 import Header from "./comps/Header";
 import MovingBar from "./comps/MovingBar.jsx";
+import Body from "./comps/Body.jsx";
 function App() {
   return (
     <div className="App">
@@ -8,6 +9,7 @@ function App() {
         <Header></Header>
       </div>
       <MovingBar></MovingBar>
+      <Body></Body>
     </div>
   );
 }
