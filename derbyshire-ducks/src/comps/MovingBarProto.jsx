@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect, useRef } from "react";
-const MovingBar: React.FC = () => {
+const MovingBar = () => {
   const [hashtags, setHashtags] = useState([
     "#DerbyshireDucks",
     "#JoinTheFlock",
@@ -14,7 +14,7 @@ const MovingBar: React.FC = () => {
     "#Takeoff",
   ]);
   const [position, setPosition] = useState(window.innerWidth);
-  const textRef = useRef<HTMLParagraphElement>(null);
+  const textRef = useRef < HTMLParagraphElement > null;
 
   useEffect(() => {
     const moveText = () => {
