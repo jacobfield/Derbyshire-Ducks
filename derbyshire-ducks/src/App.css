@@ -44,6 +44,12 @@
   margin: 0;
   margin-top: -5px; /* Negative margin to pull subheading closer */
 }
+.est {
+  font-family: "Prompt", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  margin-top: 5px;
+}
 .ducksLogo {
   height: 200px;
   margin: auto;
