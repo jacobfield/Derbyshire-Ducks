@@ -28,7 +28,7 @@ const MovingBar: React.FC = () => {
         const totalDistance = textWidth + window.innerWidth;
 
         setPosition((prevPosition) => {
-          const newPosition = prevPosition - 1;
+          const newPosition = prevPosition - 1.3;
           // Check if the text has been completely displayed
           if (Math.abs(newPosition) >= totalDistance) {
             setMoveCount((prevCount) => prevCount + 1); // Increment move count
