@@ -1,6 +1,6 @@
-import column1 from "derbyshire-ducks/src/assets/ducks_pics/column1.png";
-import column2 from "derbyshire-ducks/src/assets/ducks_pics/column2.png";
-import column3 from "derbyshire-ducks/src/assets/ducks_pics/column3.png";
+import column1 from "../assets/ducks_pics/column1.png";
+import column2 from "../assets/ducks_pics/column2.png";
+import column3 from "../assets/ducks_pics/column3.jpg";
 
 export default function ColumnPics() {
   return (
