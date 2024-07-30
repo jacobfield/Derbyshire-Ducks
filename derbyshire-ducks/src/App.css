@@ -90,15 +90,26 @@
   height: 100vh;
   width: 100%;
 }
+.picsContainer {
+  background-color: white;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+}
 .columnPic {
   width: 25%;
   height: auto;
-  transition: opacity 0.3s ease, background-color 0.3s ease;
+  transition: opacity 0.3s ease;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
 }
 
 .columnPic:hover,
 .columnPic:active {
-  opacity: 0.5;
+  opacity: 0.3;
   background-color: white;
 }
 
