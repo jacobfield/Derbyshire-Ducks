@@ -93,18 +93,18 @@
 .picsContainer {
   background-color: white;
   height: auto;
-  display: flex;
-  align-items: flex-start;
   margin: 0;
   padding: 0;
+  line-height: 0;
 }
 .columnPic {
   width: 25%;
   height: auto;
   transition: opacity 0.3s ease;
-  background-color: whitesmoke;
   margin: 0;
   padding: 0;
+  vertical-align: top;
+  max-height: 570px;
 }
 
 .columnPic:hover,
@@ -112,7 +112,6 @@
   opacity: 0.3;
   background-color: white;
 }
-
 @media (max-width: 431px) {
   .headerDiv {
     grid-template-columns: 1fr;
