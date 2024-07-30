@@ -90,7 +90,6 @@
   height: 100vh;
   width: 100%;
 }
-
 .columnPic {
   width: 25%;
   height: auto;
@@ -116,7 +115,11 @@
   .movingText {
     font-size: 18px;
   }
+  .columnPic {
+    width: 100%;
+  }
 }
+
 @media (min-width: 432px) and (max-width: 939px) {
   .headerDiv {
     grid-template-columns: repeat(2, 1fr);
@@ -135,5 +138,8 @@
   }
   .movingText {
     font-size: 20px;
+  }
+  .columnPic {
+    width: 50%;
   }
 }

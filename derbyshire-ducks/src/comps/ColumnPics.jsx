@@ -2,6 +2,7 @@ import column1 from "../assets/ducks_pics/column1.png";
 import column2 from "../assets/ducks_pics/column2.png";
 import column3 from "../assets/ducks_pics/column3.jpg";
 import column4 from "../assets/ducks_pics/column4.png";
+
 export default function ColumnPics() {
   return (
     <div className="picsContainer">
@@ -12,7 +13,7 @@ export default function ColumnPics() {
       ></img>
       <img
         className="columnPic pic2"
-        alt="ducks team column 2 "
+        alt="ducks team column 2"
         src={column2}
       ></img>
       <img
