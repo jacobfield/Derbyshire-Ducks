@@ -93,6 +93,13 @@
 .columnPic {
   width: 25%;
   height: auto;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.columnPic:hover,
+.columnPic:active {
+  opacity: 0.5;
+  background-color: white;
 }
 
 @media (max-width: 431px) {
