@@ -3,6 +3,7 @@ import column2 from "../assets/ducks_pics/column2.png";
 import column3 from "../assets/ducks_pics/column3.jpg";
 import column4 from "../assets/ducks_pics/column4.png";
 import teamPic from "../assets/ducks_pics/teamPic.jpg";
+
 export default function ColumnPics() {
   return (
     <>
@@ -12,7 +13,7 @@ export default function ColumnPics() {
             className="columnPic pic1"
             alt="ducks team column 1"
             src={column1}
-          ></img>{" "}
+          ></img>
           <div className="overlayText">Column 1</div>
         </div>
         <div className="imageWrapper">
@@ -39,14 +40,14 @@ export default function ColumnPics() {
           ></img>
           <div className="overlayText">Column 4</div>
         </div>
-      </div>
-      <div className="imageWrapper">
-        <img
-          className="teamPic pic5"
-          alt="Derbyshire Ducks Team"
-          src={teamPic}
-        ></img>
-        <div className="overlayText">Derbyshire Ducks Team</div>
+        <div className="imageWrapper teamPicWrapper">
+          <img
+            className="teamPic pic5"
+            alt="Derbyshire Ducks Team"
+            src={teamPic}
+          ></img>
+          <div className="overlayText">Derbyshire Ducks Team</div>
+        </div>
       </div>
     </>
   );
