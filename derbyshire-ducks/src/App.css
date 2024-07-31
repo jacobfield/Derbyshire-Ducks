@@ -85,11 +85,11 @@ body,
 
 .movingBar {
   width: 100%;
-  overflow: hidden; /* prevents scrollbars */
-  white-space: nowrap; /* prevent text wrapping */
+  overflow: hidden;
+  white-space: nowrap;
   background-color: #5950c7;
   height: 35px;
-  top: 1; /* Stick to the top of App-header */
+  top: 1;
   left: 0;
   position: sticky;
   width: 100%;
@@ -97,9 +97,9 @@ body,
 }
 
 .movingText {
-  display: inline-block; /* Display as inline-block for inline positioning */
-  position: absolute; /* Position absolutely relative to .moving-bar */
-  right: 0; /* Start from the right */
+  display: inline-block;
+  position: absolute;
+  right: 0;
   color: white;
   margin: auto;
   font-size: 24px;
@@ -123,7 +123,7 @@ body,
 }
 .teamPicWrapper {
   grid-column: 1 / -1; /* Span all columns */
-  width: 100vw; /* Take up 100% of the viewport width */
+  width: 100vw;
 }
 .columnPic {
   width: 100%;
