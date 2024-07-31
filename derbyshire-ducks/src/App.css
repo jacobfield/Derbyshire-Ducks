@@ -137,7 +137,7 @@
   }
 }
 
-@media (min-width: 432px) and (max-width: 939px) {
+@media (min-width: 432px) and (max-width: 1073px) {
   .headerDiv {
     grid-template-columns: repeat(2, 1fr);
   }
