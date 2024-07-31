@@ -154,7 +154,8 @@ body,
 .imageWrapper {
   position: relative;
   width: 100%;
-  height: auto;
+  height: auto; /* Ensures the wrapper takes the height of its content */
+  text-align: center;
 }
 
 .overlayText {
@@ -163,10 +164,15 @@ body,
   left: 50%;
   transform: translate(-50%, -50%);
   color: #5950c7;
-  font-size: 1.5em;
+  font-size: 2em;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease;
+  max-width: 90%;
+  width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.1; /* Ensures lines don't overlap */
 }
 
 .imageWrapper:hover .overlayText {

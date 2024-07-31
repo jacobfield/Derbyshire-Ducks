@@ -14,7 +14,9 @@ export default function ColumnPics() {
             alt="ducks team column 1"
             src={column1}
           ></img>
-          <div className="overlayText">Column 1</div>
+          <p className="overlayText">
+            We are Derbyshire's only Flag Football Team
+          </p>
         </div>
         <div className="imageWrapper">
           <img
@@ -22,7 +24,7 @@ export default function ColumnPics() {
             alt="ducks team column 2"
             src={column2}
           ></img>
-          <div className="overlayText">Column 2</div>
+          <p className="overlayText">Column 2</p>
         </div>
         <div className="imageWrapper">
           <img
@@ -30,7 +32,7 @@ export default function ColumnPics() {
             alt="ducks team column 3"
             src={column3}
           ></img>
-          <div className="overlayText">Column 3</div>
+          <p className="overlayText">Column 3</p>
         </div>
         <div className="imageWrapper">
           <img
@@ -38,7 +40,7 @@ export default function ColumnPics() {
             alt="ducks team column 4"
             src={column4}
           ></img>
-          <div className="overlayText">Column 4</div>
+          <p className="overlayText">Column 4</p>
         </div>
         <div className="imageWrapper teamPicWrapper">
           <img
@@ -46,7 +48,7 @@ export default function ColumnPics() {
             alt="Derbyshire Ducks Team"
             src={teamPic}
           ></img>
-          <div className="overlayText">Derbyshire Ducks Team</div>
+          <p className="overlayText">Derbyshire Ducks Team</p>
         </div>
       </div>
     </>
