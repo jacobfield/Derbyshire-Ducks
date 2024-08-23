@@ -143,7 +143,9 @@ body,
 .teamPic:hover,
 .teamPic:active,
 .imageWrapper:hover .columnPic,
-.imageWrapper:active .columnPic {
+.imageWrapper:active .columnPic,
+.imageWrapper:hover .teamPic,
+.imageWrapper:active .teamPic {
   opacity: 0.3;
   background-color: white;
   filter: blur(2.5px);
