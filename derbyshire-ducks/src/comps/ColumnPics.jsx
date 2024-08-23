@@ -60,7 +60,51 @@ export default function ColumnPics() {
             alt="Derbyshire Ducks Team"
             src={teamPic}
           ></img>
-          <p className="overlayText">Derbyshire Ducks Team</p>
+          <div className="rulesWrapper">
+            <h2 className="overlayText rulesHeading">WHAT IS FLAG FOOTBALL?</h2>
+            <div className="rulePicWrapper">
+              <p className="rules1 rulesText">
+                Flag Football is like American Football’s fun-loving,
+                non-contact sibling – all the action, none of the bruises! At
+                the Derbyshire Ducks, we’ve embraced this fast-paced sport where
+                strategy meets athleticism, and everyone gets in on the action.
+              </p>
+            </div>
+            <div className="rulePicWrapper">
+              <p className="rules2 rulesText">
+                Here’s the deal: two teams of five face off, with one on Offense
+                and the other on Defense. The goal? Score touchdowns, each worth
+                six points, by moving the ball down the field and across the
+                opponent’s goal line.
+              </p>
+            </div>
+            <div className="rulePicWrapper">
+              <p className="rules3 rulesText">
+                But instead of crunching tackles, players wear belts with two
+                flags. The Offense gets four attempts ("downs") to reach the
+                halfway line, and if successful, another four to hit the end
+                zone. They can run or pass the ball – whatever it takes to
+                score.
+              </p>
+            </div>
+            <div className="rulePicWrapper">
+              <p className="rules4 rulesText">
+                The Defense, meanwhile, aims to stop the Offense by snatching a
+                flag from the ball carrier’s belt, ending the play on the spot.
+                And if they’re feeling extra crafty, they might even snag an
+                interception and turn the tables.
+              </p>
+            </div>
+            <div className="rulePicWrapper">
+              <p className="rules5 rulesText">
+                Games are officiated by players from other teams, and while we
+                Ducks might not have the fanciest uniforms, we know how to keep
+                things fair and fun. Open to men and women over 16, Flag
+                Football is simple, exciting, and guaranteed to give you a
+                quacking good time!
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </>
