@@ -244,6 +244,9 @@ body,
   .columnPic {
     width: 50%;
   }
+  .imageWrapper {
+    height: 75%;
+  }
   .picsContainer {
     grid-template-columns: repeat(2, 1fr);
   }
