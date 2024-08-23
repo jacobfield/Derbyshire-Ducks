@@ -57,6 +57,7 @@ body,
   margin: 0;
   margin-top: 15px;
   line-height: 1;
+  text-shadow: 2px 2px #5950c7;
 }
 
 .subheading {
@@ -65,6 +66,7 @@ body,
   margin: 0;
   margin-top: -5px; /* Negative margin to pull subheading closer */
   margin-bottom: 3px;
+  text-shadow: 1px 1px #5950c7;
 }
 
 .est {
@@ -72,6 +74,7 @@ body,
   font-size: 18px;
   margin: 0;
   margin-top: 5px;
+  text-shadow: 1px 1px #5950c7;
 }
 
 .ducksLogo {
@@ -138,7 +141,9 @@ body,
 .columnPic:hover,
 .columnPic:active,
 .teamPic:hover,
-.teamPic:active {
+.teamPic:active,
+.imageWrapper:hover .columnPic,
+.imageWrapper:active .columnPic {
   opacity: 0.3;
   background-color: white;
   filter: blur(2.5px);
@@ -175,7 +180,7 @@ body,
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.1; /* Ensures lines don't overlap */
-  text-shadow: 1.5px 1.5px whitesmoke;
+  text-shadow: 1px 1px whitesmoke;
 }
 
 .imageWrapper:hover .overlayText {

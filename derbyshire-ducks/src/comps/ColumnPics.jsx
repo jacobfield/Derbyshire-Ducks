@@ -15,7 +15,10 @@ export default function ColumnPics() {
             src={column1}
           ></img>
           <p className="overlayText">
-            We are Derbyshire's only Flag Football Team
+            We're Derbyshire's only Flag Football Team. <br />
+            <br />
+            Established in 2023, we are rapidly growing, and we want you to join
+            us!
           </p>
         </div>
         <div className="imageWrapper">
@@ -24,7 +27,10 @@ export default function ColumnPics() {
             alt="ducks team column 2"
             src={column2}
           ></img>
-          <p className="overlayText">Column 2</p>
+          <p className="overlayText">
+            We welcome anybody who wants to play, regardless of age, gender,
+            experience, or athletic ability!
+          </p>
         </div>
         <div className="imageWrapper">
           <img
@@ -32,7 +38,10 @@ export default function ColumnPics() {
             alt="ducks team column 3"
             src={column3}
           ></img>
-          <p className="overlayText">Column 3</p>
+          <p className="overlayText">
+            We train on Tuesdays between 6-8pm. Get in touch for more
+            information!
+          </p>
         </div>
         <div className="imageWrapper">
           <img
@@ -40,7 +49,10 @@ export default function ColumnPics() {
             alt="ducks team column 4"
             src={column4}
           ></img>
-          <p className="overlayText">Column 4</p>
+          <p className="overlayText">
+            All you need to join are some boots and a good attitude - Flag
+            Football is for everyone!
+          </p>
         </div>
         <div className="imageWrapper teamPicWrapper">
           <img
