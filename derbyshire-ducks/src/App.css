@@ -185,7 +185,7 @@ body,
   line-height: 1.1; /* Ensures lines don't overlap */
   text-shadow: 1px 1px whitesmoke;
 }
-.overlayText.top {
+.top {
   font-family: "Bebas Neue", sans-serif;
   transform: translate(-50%, -50%);
   color: #5950c7;
@@ -211,6 +211,44 @@ body,
 
 .rulesHeading {
   font-size: 50px;
+}
+.rulesText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Bebas Neue", sans-serif;
+  transform: translate(-50%, -50%);
+  color: #5950c7;
+  font-size: 1.5em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 90%;
+  width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.1;
+  text-shadow: 1px 1px whitesmoke;
+  z-index: 1;
+}
+.imageWrapper:hover .overlayText,
+.teamPicWrapper:hover .rulesText {
+  opacity: 1;
+}
+.rules1 {
+  top: 20%;
+}
+.rules2 {
+  top: 35%;
+}
+.rules3 {
+  top: 50%;
+}
+.rules4 {
+  top: 65%;
+}
+.rules5 {
+  top: 80%;
 }
 
 @media (max-width: 431px) {

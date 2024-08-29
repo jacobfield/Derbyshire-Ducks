@@ -69,7 +69,9 @@ export default function ColumnPics() {
             src={teamPic}
           ></img>
           <div className="rulesWrapper">
-            <h2 className="overlayText rulesHeading">WHAT IS FLAG FOOTBALL?</h2>
+            <h2 className="overlayText rulesHeading top">
+              WHAT IS FLAG FOOTBALL?
+            </h2>
             <div className="rulePicWrapper">
               <p className="rules1 rulesText">
                 Flag Football is like American Football’s fun-loving,
