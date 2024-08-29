@@ -29,9 +29,12 @@ export default function ColumnPics() {
             alt="ducks team column 2"
             src={column2}
           ></img>
+          <h2 className="overlayText top">Can I play?</h2>
           <p className="overlayText">
-            We welcome anybody who wants to play, regardless of age, gender,
-            experience, or athletic ability!
+            <br />
+            We welcome anybody who wants to play! <br />
+            <br /> No matter your age, gender, experience level or athletic
+            ability, we want you!
           </p>
         </div>
         <div className="imageWrapper">
@@ -40,9 +43,11 @@ export default function ColumnPics() {
             alt="ducks team column 3"
             src={column3}
           ></img>
+          <h2 className="overlayText top">Where and when?</h2>
           <p className="overlayText">
-            Training is on Tuesdays between 6-8pm. Get in touch for more
-            information!
+            Training is on Tuesdays between 6-8pm.
+            <br />
+            <br /> Get in touch for more information!
           </p>
         </div>
         <div className="imageWrapper">
@@ -51,9 +56,10 @@ export default function ColumnPics() {
             alt="ducks team column 4"
             src={column4}
           ></img>
+          <h2 className="overlayText top">What do I need to bring?</h2>
           <p className="overlayText">
-            All you need to join are some boots and a good attitude - Flag
-            Football is for everyone!
+            All you need to join are some boots and a good attitude <br />
+            <br /> Flag Football is for everyone!
           </p>
         </div>
         <div className="imageWrapper teamPicWrapper">
