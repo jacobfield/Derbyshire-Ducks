@@ -220,6 +220,7 @@ body,
   transform: translate(-50%, -50%);
   color: #5950c7;
   font-size: 1.5em;
+  line-height: 1.1;
   text-align: center;
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -227,7 +228,6 @@ body,
   width: auto;
   white-space: normal;
   overflow-wrap: break-word;
-  line-height: 1.1;
   text-shadow: 1px 1px whitesmoke;
   z-index: 1;
 }
@@ -281,6 +281,15 @@ body,
   .teamPic {
     width: 100%;
   }
+  .rulesHeading {
+    font-size: 1.5em;
+  }
+  .rulesText {
+    width: 90%;
+    font-size: 0.8em;
+    line-height: 0.8;
+    margin-top: 5%;
+  }
 }
 
 @media (min-width: 432px) and (max-width: 1073px) {
@@ -317,5 +326,14 @@ body,
   }
   .overlayText.description {
     margin-top: 35%;
+  }
+  .rulesHeading {
+    font-size: 1.5em;
+  }
+  .rulesText {
+    width: 90%;
+    font-size: 1.1em;
+    line-height: 0.8;
+    margin-top: 5%;
   }
 }

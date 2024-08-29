@@ -70,7 +70,7 @@ export default function ColumnPics() {
           ></img>
           <div className="rulesWrapper">
             <h2 className="overlayText rulesHeading top">
-              WHAT IS FLAG FOOTBALL?
+              HOW TO PLAY FLAG FOOTBALL
             </h2>
             <div className="rulePicWrapper">
               <p className="rules1 rulesText">
