@@ -16,7 +16,6 @@ export default function ColumnPics() {
           ></img>
           <h2 className="overlayText top">Who are we?</h2>
           <p className="overlayText description">
-            <br />
             We're Derbyshire's only Flag Football Team. <br />
             <br />
             Established in 2023, we are rapidly growing, and we want you to join
@@ -59,7 +58,8 @@ export default function ColumnPics() {
           <h2 className="overlayText top">What do I need to bring?</h2>
           <p className="overlayText">
             All you need to join are some boots and a good attitude <br />
-            <br /> Flag Football is for everyone!
+            <br /> Flag Football is for everyone! 🏈🦆
+            <br />
           </p>
         </div>
         <div className="imageWrapper teamPicWrapper">

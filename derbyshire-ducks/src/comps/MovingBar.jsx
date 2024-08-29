@@ -12,6 +12,7 @@ const MovingBar = () => {
     "#VFormation",
     "#FlagIsSwag",
     "#Takeoff",
+    "#🦆",
   ];
 
   const [hashtags, setHashtags] = useState([

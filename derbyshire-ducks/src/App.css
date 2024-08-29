@@ -179,7 +179,7 @@ body,
   opacity: 0;
   transition: opacity 0.5s ease;
   max-width: 90%;
-  width: auto;
+  width: 80%;
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.1; /* Ensures lines don't overlap */
@@ -194,7 +194,7 @@ body,
   opacity: 0;
   transition: opacity 0.5s ease;
   max-width: 90%;
-  width: auto;
+  width: 90%;
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.1;
@@ -277,11 +277,6 @@ body,
   .teamPic {
     width: 100%;
   }
-  .overlayText.description {
-    margin-top: 15%;
-  }
-}
-@media (min-width: 432px) and (max-width: 560px) {
   .overlayText.description {
     margin-top: 35%;
   }
