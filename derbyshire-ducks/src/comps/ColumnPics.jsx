@@ -3,7 +3,7 @@ import column2 from "../assets/ducks_pics/column2.png";
 import column3 from "../assets/ducks_pics/column3.jpg";
 import column4 from "../assets/ducks_pics/column4.png";
 import teamPic from "../assets/ducks_pics/teamPic.jpg";
-
+import { Icons } from "./Icons.jsx";
 export default function ColumnPics() {
   return (
     <>
@@ -107,14 +107,14 @@ export default function ColumnPics() {
             </div>
             <div className="rulePicWrapper">
               <p className="rules5 rulesText">
-                Games are officiated by players from other teams, and while we
-                Ducks might not have the fanciest uniforms, we know how to keep
-                things fair and fun. Open to men and women over 16, Flag
-                Football is simple, exciting, and guaranteed to give you a
-                quacking good time!
+                Games are officiated by players from other teams, and The Ducks
+                know how to keep things fair and fun! Open to men and women over
+                16, Flag Football is simple, exciting, and guaranteed to give
+                you a quacking good time!
               </p>
             </div>
           </div>
+          <Icons />
         </div>
       </div>
     </>

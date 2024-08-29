@@ -219,7 +219,7 @@ body,
   font-family: "Bebas Neue", sans-serif;
   transform: translate(-50%, -50%);
   color: #5950c7;
-  font-size: 1.5em;
+  font-size: 1.65em;
   line-height: 1.1;
   text-align: center;
   opacity: 0;
@@ -230,7 +230,6 @@ body,
   overflow-wrap: break-word;
   text-shadow: 1px 1px whitesmoke;
   z-index: 1;
-  font-weight: bold;
 }
 .imageWrapper:hover .overlayText,
 .teamPicWrapper:hover .rulesText {
