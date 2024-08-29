@@ -15,6 +15,7 @@ export default function ColumnPics() {
             src={column1}
           ></img>
           <p className="overlayText">
+            <br />
             We're Derbyshire's only Flag Football Team. <br />
             <br />
             Established in 2023, we are rapidly growing, and we want you to join
