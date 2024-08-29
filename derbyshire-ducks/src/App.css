@@ -230,6 +230,7 @@ body,
   overflow-wrap: break-word;
   text-shadow: 1px 1px whitesmoke;
   z-index: 1;
+  font-weight: bold;
 }
 .imageWrapper:hover .overlayText,
 .teamPicWrapper:hover .rulesText {
