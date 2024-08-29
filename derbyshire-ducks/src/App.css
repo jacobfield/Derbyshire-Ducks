@@ -168,10 +168,10 @@ body,
 }
 
 .overlayText {
-  font-family: "Bebas Neue", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: "Bebas Neue", sans-serif;
   transform: translate(-50%, -50%);
   color: #5950c7;
   font-size: 2em;
@@ -184,6 +184,25 @@ body,
   overflow-wrap: break-word;
   line-height: 1.1; /* Ensures lines don't overlap */
   text-shadow: 1px 1px whitesmoke;
+}
+.overlayText.top {
+  font-family: "Bebas Neue", sans-serif;
+  transform: translate(-50%, -50%);
+  color: #5950c7;
+  font-size: 2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 90%;
+  width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.1;
+  text-shadow: 1px 1px whitesmoke;
+  position: absolute;
+  top: 10%; /* Adjust this value as needed */
+  left: 50%;
+  text-decoration: underline;
 }
 
 .imageWrapper:hover .overlayText {
@@ -257,5 +276,13 @@ body,
   .columnPic,
   .teamPic {
     width: 100%;
+  }
+  .overlayText.description {
+    margin-top: 15%;
+  }
+}
+@media (min-width: 432px) and (max-width: 560px) {
+  .overlayText.description {
+    margin-top: 35%;
   }
 }

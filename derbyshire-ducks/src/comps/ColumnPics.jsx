@@ -14,7 +14,8 @@ export default function ColumnPics() {
             alt="ducks team column 1"
             src={column1}
           ></img>
-          <p className="overlayText">
+          <h2 className="overlayText top">Who are we?</h2>
+          <p className="overlayText description">
             <br />
             We're Derbyshire's only Flag Football Team. <br />
             <br />
@@ -40,7 +41,7 @@ export default function ColumnPics() {
             src={column3}
           ></img>
           <p className="overlayText">
-            We train on Tuesdays between 6-8pm. Get in touch for more
+            Training is on Tuesdays between 6-8pm. Get in touch for more
             information!
           </p>
         </div>
