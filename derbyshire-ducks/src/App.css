@@ -168,10 +168,10 @@ body,
 }
 
 .overlayText {
-  font-family: "Bebas Neue", sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
+  font-family: "Bebas Neue", sans-serif;
   transform: translate(-50%, -50%);
   color: #5950c7;
   font-size: 2em;
@@ -179,11 +179,30 @@ body,
   opacity: 0;
   transition: opacity 0.5s ease;
   max-width: 90%;
-  width: auto;
+  width: 80%;
   white-space: normal;
   overflow-wrap: break-word;
   line-height: 1.1; /* Ensures lines don't overlap */
   text-shadow: 1px 1px whitesmoke;
+}
+.top {
+  font-family: "Bebas Neue", sans-serif;
+  transform: translate(-50%, -50%);
+  color: #5950c7;
+  font-size: 2em;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 90%;
+  width: 90%;
+  white-space: normal;
+  overflow-wrap: break-word;
+  line-height: 1.1;
+  text-shadow: 1px 1px whitesmoke;
+  position: absolute;
+  top: 10%; /* Adjust this value as needed */
+  left: 50%;
+  text-decoration: underline;
 }
 
 .imageWrapper:hover .overlayText {
@@ -192,6 +211,44 @@ body,
 
 .rulesHeading {
   font-size: 50px;
+}
+.rulesText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: "Bebas Neue", sans-serif;
+  transform: translate(-50%, -50%);
+  color: #5950c7;
+  font-size: 1.5em;
+  line-height: 1.1;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  max-width: 90%;
+  width: auto;
+  white-space: normal;
+  overflow-wrap: break-word;
+  text-shadow: 1px 1px whitesmoke;
+  z-index: 1;
+}
+.imageWrapper:hover .overlayText,
+.teamPicWrapper:hover .rulesText {
+  opacity: 1;
+}
+.rules1 {
+  top: 20%;
+}
+.rules2 {
+  top: 35%;
+}
+.rules3 {
+  top: 50%;
+}
+.rules4 {
+  top: 65%;
+}
+.rules5 {
+  top: 80%;
 }
 
 @media (max-width: 431px) {
@@ -223,6 +280,15 @@ body,
   .columnPic,
   .teamPic {
     width: 100%;
+  }
+  .rulesHeading {
+    font-size: 1.5em;
+  }
+  .rulesText {
+    width: 90%;
+    font-size: 0.8em;
+    line-height: 0.8;
+    margin-top: 5%;
   }
 }
 
@@ -257,5 +323,17 @@ body,
   .columnPic,
   .teamPic {
     width: 100%;
+  }
+  .overlayText.description {
+    margin-top: 35%;
+  }
+  .rulesHeading {
+    font-size: 1.5em;
+  }
+  .rulesText {
+    width: 90%;
+    font-size: 1.1em;
+    line-height: 0.8;
+    margin-top: 5%;
   }
 }

@@ -14,8 +14,8 @@ export default function ColumnPics() {
             alt="ducks team column 1"
             src={column1}
           ></img>
-          <p className="overlayText">
-            <br />
+          <h2 className="overlayText top">Who are we?</h2>
+          <p className="overlayText description">
             We're Derbyshire's only Flag Football Team. <br />
             <br />
             Established in 2023, we are rapidly growing, and we want you to join
@@ -28,9 +28,12 @@ export default function ColumnPics() {
             alt="ducks team column 2"
             src={column2}
           ></img>
+          <h2 className="overlayText top">Can I play?</h2>
           <p className="overlayText">
-            We welcome anybody who wants to play, regardless of age, gender,
-            experience, or athletic ability!
+            <br />
+            We welcome anybody who wants to play! <br />
+            <br /> No matter your age, gender, experience level or athletic
+            ability, we want you!
           </p>
         </div>
         <div className="imageWrapper">
@@ -39,9 +42,11 @@ export default function ColumnPics() {
             alt="ducks team column 3"
             src={column3}
           ></img>
+          <h2 className="overlayText top">Where and when?</h2>
           <p className="overlayText">
-            We train on Tuesdays between 6-8pm. Get in touch for more
-            information!
+            Training is on Tuesdays between 6-8pm.
+            <br />
+            <br /> Get in touch for more information!
           </p>
         </div>
         <div className="imageWrapper">
@@ -50,9 +55,11 @@ export default function ColumnPics() {
             alt="ducks team column 4"
             src={column4}
           ></img>
+          <h2 className="overlayText top">What do I need to bring?</h2>
           <p className="overlayText">
-            All you need to join are some boots and a good attitude - Flag
-            Football is for everyone!
+            All you need to join are some boots and a good attitude <br />
+            <br /> Flag Football is for everyone! 🏈🦆
+            <br />
           </p>
         </div>
         <div className="imageWrapper teamPicWrapper">
@@ -62,7 +69,9 @@ export default function ColumnPics() {
             src={teamPic}
           ></img>
           <div className="rulesWrapper">
-            <h2 className="overlayText rulesHeading">WHAT IS FLAG FOOTBALL?</h2>
+            <h2 className="overlayText rulesHeading top">
+              HOW TO PLAY FLAG FOOTBALL
+            </h2>
             <div className="rulePicWrapper">
               <p className="rules1 rulesText">
                 Flag Football is like American Football’s fun-loving,
